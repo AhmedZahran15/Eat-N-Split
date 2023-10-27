@@ -47,6 +47,7 @@ export function FriendList({ friends, onAdd }) {
       </div>
       {selected && (
         <FormSplitBill
+          key={selected.id}
           selectedFriend={selected}
           onSplitBill={handleSplitBill}
         />
